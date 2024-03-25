@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargador de Videos de YouTube</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="downloader-box">
+            <h1 class="text-center mb-3">Descargador de Videos de YouTube</h1>
+            <form id="downloadForm">
+                <div class="form-group">
+                    <label for="url" class="url-label">URL del video:</label>
+                    <input type="text" class="form-control url-input" id="url" name="url" placeholder="https://www.youtube.com/watch?v=" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Descargar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
