@@ -2,6 +2,7 @@
   "version": 2,
   "functions": {
     "api/**/*.py": {
+"version" : 3.10.6,
       "memory": 1023,
       "maxDuration": 10
     }
